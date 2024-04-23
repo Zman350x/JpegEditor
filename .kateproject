@@ -1,0 +1,15 @@
+{
+    "name": "JPEG Editor",
+    "files": [ { "recursive": 1 } ],
+    "build":
+    {
+        "directory": "src",
+        "targets": [
+            { "name":"local", "build_cmd":"make" },
+            { "name":"local-verbose", "build_cmd":"make DEF=VERBOSE" },
+            { "name":"clean", "build_cmd":"make clean" }
+        ],
+       "default_target": "local",
+       "clean_target": "clean"
+    }
+}
